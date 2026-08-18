@@ -1,0 +1,42 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "jsPlugins": [
+    "../dist/index.js"
+  ],
+  "categories": {
+    "correctness": "off",
+    "suspicious": "off"
+  },
+  "rules": {
+    "biological-ui-arch/cell-must-not-compose-cell": "error",
+    "biological-ui-arch/cell-must-be-stateful": "error",
+    "biological-ui-arch/organelle-dependency": "error",
+    "biological-ui-arch/no-ts-in-bio-folders": "error",
+    "biological-ui-arch/no-brand-names": [
+      "error",
+      {
+        "brands": [
+          "examplebrand"
+        ],
+        "allow": [
+          "media.examplebrand.com"
+        ]
+      }
+    ],
+    "biological-ui-arch/no-logic-in-component-files": "error",
+    "biological-ui-arch/no-duplicate-jsx-patterns": "error",
+    "biological-ui-arch/tissue-must-compose": "error",
+    "biological-ui-arch/tissue-no-hooks": "error",
+    "biological-ui-arch/no-react-namespace": "error",
+    "biological-ui-arch/tissue-no-stores": "error",
+    "biological-ui-arch/tissue-no-organelles": "error",
+    "biological-ui-arch/cell-no-tissues": "error",
+    "biological-ui-arch/compound-no-stores": "error",
+    "biological-ui-arch/compound-must-be-stateless": "error",
+    "biological-ui-arch/molecule-atoms-only": "error",
+    "biological-ui-arch/molecule-must-compose": "error",
+    "biological-ui-arch/atom-no-deps": "error",
+    "biological-ui-arch/effect-hook-naming": "error",
+    "biological-ui-arch/no-type-definitions-in-components": "error"
+  }
+}
