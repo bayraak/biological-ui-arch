@@ -1,0 +1,46 @@
+{
+  "name": "eslint-plugin-biological-ui-arch",
+  "version": "0.1.0",
+  "description": "Lint rules that enforce a biological tier architecture (atoms, molecules, compounds, organelles, cells, tissues) in React UI codebases. Works with oxlint jsPlugins and ESLint flat config.",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "oxlint",
+    "architecture",
+    "react",
+    "atomic-design",
+    "component-hierarchy"
+  ],
+  "license": "MIT",
+  "author": "Bayram Ali Basgul",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayraak/biological-ui-arch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bayraak/biological-ui-arch/issues"
+  },
+  "homepage": "https://github.com/bayraak/biological-ui-arch#readme",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./discover-atoms": "./dist/discover-atoms.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/discover-atoms.ts --format esm --no-dts --platform node --out-dir dist",
+    "test": "npm run build && node test/run.mjs && node test/discover-atoms.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "devDependencies": {
+    "oxlint": "^1.77.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
