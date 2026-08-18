@@ -163,6 +163,14 @@ npm test   # builds with tsup, then runs the oxlint fixture regression + unit te
 
 The regression suite runs the real oxlint pipeline against fixture files and asserts each rule both fires on a genuine breach and stays quiet on the accepted conventions.
 
+## Agent skill
+
+The repo ships a [SKILL.md](SKILL.md) for AI agents: how to wire the plugin
+into oxlint or ESLint, each tier's import and state contract so generated
+components pass the rules first try, and a remedy for every rule id. Point an
+agent at the repo and it picks the skill up, or copy the repo folder into your
+agent's skills directory (e.g. `~/.claude/skills/`).
+
 ## License
 
 MIT
