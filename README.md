@@ -1,5 +1,7 @@
 # eslint-plugin-biological-ui-arch
 
+[![CI](https://github.com/bayraak/biological-ui-arch/actions/workflows/ci.yml/badge.svg)](https://github.com/bayraak/biological-ui-arch/actions/workflows/ci.yml)
+
 An architecture that is not enforced by tooling is a suggestion. This plugin turns a layered UI component architecture into 35 lint rules, so the layer boundaries hold on every commit instead of surviving only as a diagram in a doc. It was extracted from two production Next.js codebases where the rules run in CI on every change.
 
 ## The biological tier architecture
@@ -30,7 +32,7 @@ Core doctrine, each point backed by rules below:
 ## Install
 
 ```sh
-npm install --save-dev eslint-plugin-biological-ui-arch
+npm install --save-dev github:bayraak/biological-ui-arch   # not on npm yet; install from GitHub
 ```
 
 ## Usage with oxlint (primary, what the test suite runs)
