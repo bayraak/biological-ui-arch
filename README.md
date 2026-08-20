@@ -1,6 +1,6 @@
 # eslint-plugin-biological-ui-arch
 
-[![CI](https://github.com/bayraak/biological-ui-arch/actions/workflows/ci.yml/badge.svg)](https://github.com/bayraak/biological-ui-arch/actions/workflows/ci.yml)
+[![CI](https://github.com/bayraak/biological-ui-arch/actions/workflows/ci.yml/badge.svg)](https://github.com/bayraak/biological-ui-arch/actions/workflows/ci.yml) [![npm](https://img.shields.io/npm/v/eslint-plugin-biological-ui-arch)](https://www.npmjs.com/package/eslint-plugin-biological-ui-arch)
 
 An architecture that is not enforced by tooling is a suggestion. This plugin turns a layered UI component architecture into 35 lint rules, so the layer boundaries hold on every commit instead of surviving only as a diagram in a doc. It was extracted from two production Next.js codebases where the rules run in CI on every change.
 
