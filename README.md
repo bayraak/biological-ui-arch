@@ -32,7 +32,7 @@ Core doctrine, each point backed by rules below:
 ## Install
 
 ```sh
-npm install --save-dev github:bayraak/biological-ui-arch   # not on npm yet; install from GitHub
+npm install --save-dev eslint-plugin-biological-ui-arch
 ```
 
 ## Usage with oxlint (primary, what the test suite runs)
